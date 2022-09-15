@@ -45,7 +45,7 @@
         </table>
            
         </div>
-        <form action="https://sheetdb.io/api/v1/jbn11rmgz2mo7" method="post" id="sheetdb-form">
+        <form action="https://sheetdb.io/api/v1/jbn11rmgz2mo7" method="post" id="sheetdb-form" class="col-lg-4 col-md-4 clearfix">
             <label for="">الاسم</label>
             <br>
             <input type="text" name="data[Name]">
@@ -68,7 +68,7 @@
             <br>
             <textarea id="" cols="30" rows="10" placeholder=" ..انسخ الكود والصقه هنا" name="data[Code]"></textarea>
             <br>
-          <input type="submit" name="submit" value="ارسل" id="submit">
+       <input type="submit" name="submit" value="ارسل" id="submit">
         </form>
     </div>
 
@@ -81,9 +81,9 @@
               body: new FormData(document.getElementById("sheetdb-form")),
           }).then(
               response => response.json()
-          ).then((html) => {
-            alert("لقد تم حفظ ردك بنجاح")
-            
+          ).then((html) => {   
+            alert("لقد تم حفظ ردك بنجاح");
+            window.open("https://leenalsharafi.github.io/GeekOfTheWeek/");
           });
         });
     </script>
